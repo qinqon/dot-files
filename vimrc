@@ -9,3 +9,6 @@ set expandtab
 " Two spaces for YAML file"
 autocmd FileType yaml setlocal ai ts=2 sw=2 et
 au FileType gitcommit set tw=72
+
+" Remove trailing whitespaces at :w"
+autocmd BufWritePre * %s/\s\+$//e
