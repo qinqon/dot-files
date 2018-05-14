@@ -5,6 +5,8 @@ set tabstop=4
 set shiftwidth=4
 " On pressing tab, insert 4 spaces
 set expandtab
+" Print width limit
+set colorcolumn=80
 
 " Two spaces for YAML file"
 autocmd FileType yaml setlocal ai ts=2 sw=2 et
