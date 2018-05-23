@@ -14,3 +14,6 @@ au FileType gitcommit set tw=72
 
 " Remove trailing whitespaces at :w"
 autocmd BufWritePre * %s/\s\+$//e
+
+" Python formatting
+autocmd FileType python setlocal equalprg=yapf
