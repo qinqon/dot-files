@@ -17,3 +17,6 @@ autocmd BufWritePre * %s/\s\+$//e
 
 " Python formatting
 autocmd FileType python setlocal equalprg=yapf
+
+set undofile " Maintain undo history between sessions
+set undodir=~/.vim/undodir
